@@ -1,0 +1,44 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "kubiloc",
+  "scopeName": "source.kubi",
+  "patterns": [
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#titles"
+    },
+    {
+      "include": "#emojis"
+    },
+    {
+      "include": "#keys"
+    },
+    {
+      "include": "#operators"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "name": "keyword.control",
+      "match": "\\b(language|locales|fallback|return)\\b"
+    },
+    "operators": {
+      "name": "keyword.operator",
+      "match": "\\s=\\s"
+    },
+    "emojis": {
+      "name": "markup.italic",
+      "match": "\\#[A-Za-z\\.1-9]+\\#"
+    },
+    "titles": {
+      "name": "markup.underline",
+      "match": "\\#\\#[A-Za-z\\.0-9]+"
+    },
+    "keys": {
+      "name": "support.variable",
+      "match": "^[A-Za-z\\.0-9]+"
+    }
+  }
+}

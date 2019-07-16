@@ -1,0 +1,43 @@
+{
+    "name": "kubiloc",
+    "displayName": "KubiLoc",
+    "description": "Syntax highlight for PC game Kubifatorium's localization file",
+    "version": "0.0.1",
+    "repository": "https://github.com/perhapsspy/kubiloc",
+    "publisher": "kubiloc",
+    "engines": {
+        "vscode": "^1.36.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "npx js-yaml syntaxes/kubiloc.tmLanguage.yaml > syntaxes/kubiloc.tmLanguage.json"
+    },
+    "contributes": {
+        "languages": [
+            {
+                "id": "kubiloc",
+                "aliases": [
+                    "kubiloc",
+                    "kubiloc"
+                ],
+                "extensions": [
+                    ".txt"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "kubiloc",
+                "scopeName": "source.kubi",
+                "path": "./syntaxes/kubiloc.tmLanguage.json"
+            }
+        ]
+    },
+    "devDependencies": {
+        "js-yaml": "^3.13.1"
+    }
+}
