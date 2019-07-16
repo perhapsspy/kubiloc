@@ -1,7 +1,7 @@
 {
     "name": "kubiloc",
     "displayName": "KubiLoc",
-    "description": "Syntax highlight for PC game Kubifatorium's localization file",
+    "description": "Syntax highlight for Kubifaktorium(PC Game)'s localization file",
     "version": "0.0.1",
     "repository": "https://github.com/perhapsspy/kubiloc",
     "publisher": "kubiloc",
